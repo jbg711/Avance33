@@ -46,7 +46,7 @@ MAZE = [
 ]
 
 START = (0, 1)   
-END = (37, 32)    
+END = (36, 30)    
 
 def get_neighbors(maze, row, col):
     rows_len, cols_len = len(maze), len(maze[0])
@@ -107,3 +107,4 @@ def solve_maze_astar(maze, start, end):
                 heapq.heappush(pq, (f_score, neighbor, path + [neighbor]))
 
     return None
+
